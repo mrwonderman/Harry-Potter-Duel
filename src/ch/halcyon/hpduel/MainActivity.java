@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -31,6 +32,15 @@ public class MainActivity extends Activity {
 		final TextView ownPoints = (TextView) findViewById(R.id.ownText);
 		final TextView voldiPoints = (TextView) findViewById(R.id.voldiPoints);
 
+		final ProgressBar ownProgress = (ProgressBar) findViewById(R.id.progressBar1);
+		ownProgress.setMax(50);
+		ownProgress.setProgress(50);
+
+		final ProgressBar voldiProgress = (ProgressBar) findViewById(R.id.progressBar2);
+		voldiProgress.setMax(50);
+		voldiProgress.setProgress(50);
+		voldiProgress.setRotation(180);
+
 		final Button cast = (Button) findViewById(R.id.button1);
 		cast.setOnClickListener(new OnClickListener() {
 
@@ -44,8 +54,11 @@ public class MainActivity extends Activity {
 								.getSelectedItemPosition() + 1);
 						ownPoints.setText(String.valueOf(DuelLogic
 								.getPlayerHealth()));
+						ownProgress.setProgress(DuelLogic.getPlayerHealth());
 						voldiPoints.setText(String.valueOf(DuelLogic
 								.getVoldemortHealth()));
+						voldiProgress.setProgress(DuelLogic
+								.getVoldemortHealth());
 					} else {
 						fieldText = checkDeath();
 					}
@@ -53,6 +66,9 @@ public class MainActivity extends Activity {
 							|| (DuelLogic.getPlayerHealth() == 0)) {
 						fieldText = checkDeath();
 					}
+					voldiPoints.setText(String.valueOf(DuelLogic
+							.getVoldemortHealth()));
+					voldiProgress.setProgress(DuelLogic.getVoldemortHealth());
 					textView.append(fieldText);
 
 				} else {
@@ -61,6 +77,8 @@ public class MainActivity extends Activity {
 					DuelLogic.setNumberOfDuels(0);
 					ownPoints.setText(String.valueOf(50));
 					voldiPoints.setText(String.valueOf(50));
+					ownProgress.setProgress(50);
+					voldiProgress.setProgress(50);
 					textView.setText("");
 					cast.setText("cast");
 					restart = false;
