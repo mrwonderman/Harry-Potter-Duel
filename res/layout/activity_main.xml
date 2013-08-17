@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/textView1"
-        android:text="cast" />
+        android:text="@string/cast" />
 
     <Spinner
         android:id="@+id/spinner1"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/ownText"
         android:layout_alignRight="@+id/textView1"
-        android:text="50"
+        android:text="@string/_50"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/voldiPoints"
         android:layout_centerHorizontal="true"
-        android:text="vs."
+        android:text="@string/vs_"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView4"
         android:layout_alignLeft="@+id/ownText"
-        android:text="Player"
+        android:text="@string/player"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/darker_gray" />
 
@@ -72,7 +72,7 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_alignParentTop="true"
         android:layout_marginTop="19dp"
-        android:text="50"
+        android:text="@string/_50"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignRight="@+id/voldiPoints"
-        android:text="Voldemort"
+        android:text="@string/voldemort"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/darker_gray" />
 

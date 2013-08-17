@@ -2,8 +2,6 @@
 <resources>
 
     <string name="app_name">HPDuel</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
 
     <string-array name="spells">
         <item>stupify</item>
@@ -12,5 +10,11 @@
         <item>expelliarmus</item>
         <item>protego</item>
     </string-array>
+
+    <string name="cast">cast</string>
+    <string name="_50">50</string>
+    <string name="vs_">vs.</string>
+    <string name="player">Player</string>
+    <string name="voldemort">Voldemort</string>
 
 </resources>

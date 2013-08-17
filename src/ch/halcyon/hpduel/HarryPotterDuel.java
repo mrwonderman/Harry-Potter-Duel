@@ -119,6 +119,8 @@ public class HarryPotterDuel {
 
 				// if user chooses to duel
 				if (choice == 2) {
+
+					// moved to the logic =)
 				}
 
 				// if user chooses to train

@@ -5,20 +5,12 @@ import java.util.Random;
 public class DuelLogic {
 
 	private static int stupify = 10;
-	// value of the spell Impedimenta
 	private static int impedimenta = 10;
-	// value of the spell Furnunculus
 	private static int furnunculus = 10;
-	// value of the spell Expelliarmus
 	private static int expelliarmus = 10;
-	// Starting value of the player's health
 	private static int playerHealth = 50;
-	// Starting value of Voldemort's health
 	private static int voldemortHealth = 50;
-	// Variable used to count the number of duels
 	private static int numberOfDuels = 0;
-	// Variable used to count the number of heals
-	int healing = 0;
 
 	public static String duel(int spell) {
 		setNumberOfDuels(getNumberOfDuels() + 1);
