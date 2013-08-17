@@ -1,4 +1,5 @@
 
 bin/*
+!bin/Harry-Potter-Duel.apk
 gen/*
 .DS_Store
